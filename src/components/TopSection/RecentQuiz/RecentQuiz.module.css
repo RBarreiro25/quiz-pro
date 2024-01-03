@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container h2 {
+    font-size: 14px !important;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        justify-content: space-evenly;
+        width: 40%;
+    }
+}

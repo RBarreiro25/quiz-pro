@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 41px;
+    margin-bottom: 34px;
+    width: 100%;
+}
+
+.profile_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--gray-darker);
+}
+
+.text {
+    color: var(--gray);
+    margin-left: 16px;
+}
+
+.text span {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.notifications {
+    margin-left: auto;
+    cursor: pointer;
+}
