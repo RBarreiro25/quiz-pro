@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    cursor: pointer;
 }
 
 .icon_container {

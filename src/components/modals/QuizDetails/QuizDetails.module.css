@@ -1,0 +1,142 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 24px;
+    padding-top: 40px;
+    z-index: 10000;
+    background-color: var(--white);
+}
+
+.modal_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 32px;
+}
+
+.modal_header button {
+    width: 24px;
+    height: 24px;
+}
+
+.return_button {
+    margin-right: 24px;
+}
+
+.more_button {
+    margin-left: auto;
+}
+
+.modal_header h3,
+.about_quiz h3 {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about_quiz {
+    margin-bottom: 98px;
+}
+
+.about_quiz h3 {
+    margin-top: 24px;
+}
+
+.quiz_info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-shadow: var(--box-shadow-lighter);
+    padding: 16px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.quiz_info .icon_container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color: var(--bg-icon-yellow-trans);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz_info h4 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.quiz_info p {
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.quiz_instructions {
+    width: 100%;
+}
+
+.quiz_instructions h3 {
+    width: 95%;
+    margin-bottom: 24px;
+}
+
+.list {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.list_item {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.list_item p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    color: var(--gray);
+    line-height: 19px;
+}
+
+.list_marker {
+    min-width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--black);
+    margin-right: 16px;
+    position: relative;
+    top: 5px;
+}
+
+.modal_button {
+    padding: 15.5px;
+    border-radius: 10px;
+    height: 48px;
+    font-weight: 600;
+    width: auto;
+    text-align: center;
+}
+
+.button_blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.button_large {
+    width: 100% !important;
+}
