@@ -8,30 +8,34 @@ export default function BottomSection() {
   const [selectedCard, setSelectedCard] = useState({});
   const popularQuizCards = [
     {"id": "1", "title": "Technology", "questions": 10, "bgColor": "var(--bg-icon-yellow)", "rate": 4.8, 'maxTime': 120},
-    {"id": "2", "title": "Sport", "questions": 10, "bgColor": "var(--bg-icon-blue)", "rate": 4.8, 'maxTime': 60},
-    {"id": "3", "title": "Music", "questions": 10, "bgColor": "var(--bg-icon-red)", "rate": 4.8, 'maxTime': 45},
+    {"id": "2", "title": "Sport", "questions": 15, "bgColor": "var(--bg-icon-blue)", "rate": 4.7, 'maxTime': 60},
+    {"id": "3", "title": "Music", "questions": 12, "bgColor": "var(--bg-icon-red)", "rate": 4.9, 'maxTime': 45},
   ];
 
 
   return (
-    <div className={styles.bottom_section}>
-      <h2 className={styles.h2}>Popular Quiz</h2>
-      <div className={styles.cards}>
-        {popularQuizCards.map(card => (
-          <PopularQuizCard
-            key={card.id}
-            id={card.id}
-            title={card.title}
-            questions={card.questions}
-            bgColor={card.bgColor}
-            rate={card.rate}
-            maxTime={card.maxTime}
-            showDetailsModal={showDetailsModal}
-            setShowDetailsModal={setShowDetailsModal}
-            setSelectedCard={setSelectedCard}
-            selectedCard={selectedCard}
-          />
-        ))}
+    <>
+      <div className={styles.bottom_section}>
+        <h2 className={styles.h2}>Popular Quiz</h2>
+        <div className={styles.cards}>
+          {popularQuizCards.map(card => (
+            <PopularQuizCard
+              key={card.id}
+              id={card.id}
+              title={card.title}
+              questions={card.questions}
+              bgColor={card.bgColor}
+              rate={card.rate}
+              maxTime={card.maxTime}
+              showDetailsModal={showDetailsModal}
+              setShowDetailsModal={setShowDetailsModal}
+              setSelectedCard={setSelectedCard}
+              selectedCard={selectedCard}
+            />
+          ))}
+        </div>
+      </div>
+      <div>
         {showDetailsModal ?
           <QuizDetails
             title={selectedCard.title}
@@ -44,6 +48,6 @@ export default function BottomSection() {
           />
         : ''}
       </div>
-    </div>
+    </>
   );
 }

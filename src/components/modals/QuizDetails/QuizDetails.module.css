@@ -9,6 +9,15 @@
     padding-top: 40px;
     z-index: 10000;
     background-color: var(--white);
+    transition: all 0.2s ease-out;
+}
+
+.modal_content {
+    animation: slideIn 0.2s ease-out;
+}
+
+.modal_content.closing {
+    animation: slideOut 0.2s ease-out;
 }
 
 .modal_header {
@@ -33,7 +42,7 @@
 }
 
 .modal_header h3,
-.about_quiz h3 {
+.modal_title {
     color: var(--black);
     font-weight: 600;
     font-size: 16px;
@@ -43,7 +52,7 @@
     margin-bottom: 98px;
 }
 
-.about_quiz h3 {
+.modal_title {
     margin-top: 24px;
 }
 
@@ -123,6 +132,13 @@
     top: 5px;
 }
 
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal_button {
     padding: 15.5px;
     border-radius: 10px;
@@ -139,4 +155,23 @@
 
 .button_large {
     width: 100% !important;
+    max-width: 330px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
 }

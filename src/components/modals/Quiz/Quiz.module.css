@@ -1,0 +1,104 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 24px;
+    padding-top: 40px;
+    z-index: 10000;
+    background-color: var(--white);
+    transition: all 0.2s ease-out;
+}
+
+.modal_content {
+    animation: slideIn 0.2s ease-out;
+}
+
+.modal_content.closing {
+    animation: slideOut 0.2s ease-out;
+}
+
+.modal_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 32px;
+}
+
+.modal_header button {
+    width: 24px;
+    height: 24px;
+}
+
+.return_button {
+    margin-right: 24px;
+}
+
+.modal_header h3 {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cronometer {
+    padding: 4px 8px;
+    background-color: var(--blue-lighter);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+    margin-left: auto;
+    border-radius: 16px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.modal_button {
+    padding: 15.5px;
+    border-radius: 10px;
+    height: 48px;
+    font-weight: 600;
+    width: auto;
+    text-align: center;
+}
+
+.button_blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.button_outlined {
+    background-color: transparent;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.button_medium {
+    width: 155px !important;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
