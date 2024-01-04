@@ -10,16 +10,14 @@
     padding-top: 40px;
     z-index: 10000;
     background-color: var(--white);
-    transition: all 0.2s ease-out;
     margin: 0 auto;
+    animation: slideIn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    -webkit-animation: slideIn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
-.modal_content {
-    animation: slideIn 0.2s ease-out;
-}
-
-.modal_content.closing {
-    animation: slideOut 0.2s ease-out;
+.modal.closing {
+    animation: slideOut 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    -webkit-animation: slideOut 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 .modal_header {

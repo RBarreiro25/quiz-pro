@@ -36,7 +36,7 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
       setIsClosing(true);
       setTimeout(() => {
           setShowDetailsModal(false);
-      }, 200);
+      }, 400);
   }
 
   const handleStartClick = () => {
@@ -47,71 +47,69 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
   return (
     <>
       <div className={`${styles.modal} ${isClosing ? styles.closing : ''}`}>
-        <div className={`${styles.modal_content} ${isClosing ? styles.closing : ''}`}>
-          <div className={styles.modal_header}>
-              <button className={styles.return_button} onClick={handleCloseModal}>
-                <img src={returnButton} alt='Return button that closes the Quiz Details modal' />
-              </button>
-              <h3>{modalTitle}</h3>
-              <button className={styles.more_button}>
-                <img src={moreVertButton} alt='3 dots button that shows hidden options' />
-              </button>
-          </div>
-          <section className={styles.about_quiz}>
-              <PopularQuizCard
-                title={title}
-                questions={questions}
-                bgColor={bgColor}
-                rate={rate}
-                blockClick={true}
-                setSelectedCard={() => {}}
-                setShowDetailsModal={() => {}}
-              />
-              <h3 className={styles.modal_title}>Brief explanation about this quiz</h3>
-              <div className={styles.quiz_info}>
-                <div className={styles.icon_container}>
-                  <img src={questionIcon} alt='question icon' />
-                </div>
-                <div>
-                  <h4>{questions} Question</h4>
-                  <p>10 point for a correct answer</p>
-                </div>
-              </div>
-              <div className={styles.quiz_info}>
-                <div className={styles.icon_container}>
-                  <img src={clockIcon} alt='clock icon' />
-                </div>
-                <div>
-                  <h4>{toHoursAndMinutes(maxTime)}</h4>
-                  <p>Total duration of the quiz</p>
-                </div>
-              </div>
-              <div className={styles.quiz_instructions}>
-                <h3 className={styles.modal_title}>Please read the text below carefully so you can understand it</h3>
-                <div className={styles.list}>
-                  <div className={styles.list_item}>
-                    <div className={styles.list_marker}></div>
-                    <p>10 point awarded for a correct answer and no marks for a incorrect answer</p>
-                  </div>
-                  <div className={styles.list_item}>
-                    <div className={styles.list_marker}></div>
-                    <p>Tap on options to select the correct answer</p>
-                  </div>
-                  <div className={styles.list_item}>
-                    <div className={styles.list_marker}></div>
-                    <p>Click submit if you are sure you want to complete all the quizzes</p>
-                  </div>
-                </div>
-              </div>
-          </section>
-          <div className={styles.buttons}>
-            <button
-              className={`${styles.modal_button} ${styles.button_blue} ${styles.button_large}`}
-              onClick={() => handleStartClick()}
-            >
-              Get Started
+        <div className={styles.modal_header}>
+            <button className={styles.return_button} onClick={handleCloseModal}>
+              <img src={returnButton} alt='Return button that closes the Quiz Details modal' />
             </button>
-          </div>
+            <h3>{modalTitle}</h3>
+            <button className={styles.more_button}>
+              <img src={moreVertButton} alt='3 dots button that shows hidden options' />
+            </button>
+        </div>
+        <section className={styles.about_quiz}>
+            <PopularQuizCard
+              title={title}
+              questions={questions}
+              bgColor={bgColor}
+              rate={rate}
+              blockClick={true}
+              setSelectedCard={() => {}}
+              setShowDetailsModal={() => {}}
+            />
+            <h3 className={styles.modal_title}>Brief explanation about this quiz</h3>
+            <div className={styles.quiz_info}>
+              <div className={styles.icon_container}>
+                <img src={questionIcon} alt='question icon' />
+              </div>
+              <div>
+                <h4>{questions} Question</h4>
+                <p>10 point for a correct answer</p>
+              </div>
+            </div>
+            <div className={styles.quiz_info}>
+              <div className={styles.icon_container}>
+                <img src={clockIcon} alt='clock icon' />
+              </div>
+              <div>
+                <h4>{toHoursAndMinutes(maxTime)}</h4>
+                <p>Total duration of the quiz</p>
+              </div>
+            </div>
+            <div className={styles.quiz_instructions}>
+              <h3 className={styles.modal_title}>Please read the text below carefully so you can understand it</h3>
+              <div className={styles.list}>
+                <div className={styles.list_item}>
+                  <div className={styles.list_marker}></div>
+                  <p>10 point awarded for a correct answer and no marks for a incorrect answer</p>
+                </div>
+                <div className={styles.list_item}>
+                  <div className={styles.list_marker}></div>
+                  <p>Tap on options to select the correct answer</p>
+                </div>
+                <div className={styles.list_item}>
+                  <div className={styles.list_marker}></div>
+                  <p>Click submit if you are sure you want to complete all the quizzes</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div className={styles.buttons}>
+          <button
+            className={`${styles.modal_button} ${styles.button_blue} ${styles.button_large}`}
+            onClick={() => handleStartClick()}
+          >
+            Get Started
+          </button>
         </div>
       </div>
       {showQuizModal ?
