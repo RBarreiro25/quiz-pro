@@ -95,16 +95,14 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
           </div>
         </div>
       </div>
-      <div>
-        {showQuizModal ?
-          <Quiz 
-            title={title}
-            maxTime={maxTime}
-            setShowQuizModal={setShowQuizModal}
-            questions={questions}
-          />
-        : ''}
-      </div>
+      {showQuizModal ?
+        <Quiz 
+          title={title}
+          maxTime={maxTime}
+          setShowQuizModal={setShowQuizModal}
+          questions={questions}
+        />
+      : ''}
     </>
   )
 }

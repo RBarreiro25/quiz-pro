@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 1100px;
     height: auto;
     min-height: 100vh;
     padding: 24px;
@@ -10,6 +11,7 @@
     z-index: 10000;
     background-color: var(--white);
     transition: all 0.2s ease-out;
+    margin: 0 auto;
 }
 
 .modal_content {
