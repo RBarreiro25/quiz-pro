@@ -24,7 +24,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     margin-bottom: 32px;
 }
 
@@ -48,41 +48,10 @@
     background-color: var(--blue-lighter);
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 4px;
     margin-left: auto;
     border-radius: 16px;
-}
-
-.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-}
-
-.modal_button {
-    padding: 15.5px;
-    border-radius: 10px;
-    height: 48px;
-    font-weight: 600;
-    width: auto;
-    text-align: center;
-}
-
-.button_blue {
-    background-color: var(--blue);
-    color: var(--white);
-}
-
-.button_outlined {
-    background-color: transparent;
-    color: var(--blue);
-    border: 1px solid var(--blue);
-}
-
-.button_medium {
-    width: 155px !important;
 }
 
 @keyframes slideIn {

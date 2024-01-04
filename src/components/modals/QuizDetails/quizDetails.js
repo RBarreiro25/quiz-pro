@@ -41,7 +41,7 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
               <button className={styles.return_button} onClick={handleCloseModal}>
                 <img src={returnButton} alt='Return button that closes the Quiz Details modal' />
               </button>
-              <h3 className={styles.modal_title}>{modalTitle}</h3>
+              <h3 className={styles}>{modalTitle}</h3>
               <button className={styles.more_button}>
                 <img src={moreVertButton} alt='3 dots button that shows hidden options' />
               </button>
@@ -101,6 +101,7 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
             title={title}
             maxTime={maxTime}
             setShowQuizModal={setShowQuizModal}
+            questions={questions}
           />
         : ''}
       </div>

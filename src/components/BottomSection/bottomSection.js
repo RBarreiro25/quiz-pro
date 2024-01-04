@@ -7,9 +7,9 @@ export default function BottomSection() {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [selectedCard, setSelectedCard] = useState({});
   const popularQuizCards = [
-    {"id": "1", "title": "Technology", "questions": 10, "bgColor": "var(--bg-icon-yellow)", "rate": 4.8, 'maxTime': 120},
-    {"id": "2", "title": "Sport", "questions": 15, "bgColor": "var(--bg-icon-blue)", "rate": 4.7, 'maxTime': 60},
-    {"id": "3", "title": "Music", "questions": 12, "bgColor": "var(--bg-icon-red)", "rate": 4.9, 'maxTime': 45},
+    {"id": "1", "title": "Technology", "questions": 10, "bgColor": "var(--bg-icon-yellow)", "rate": 4.9, 'maxTime': 60},
+    {"id": "2", "title": "Sport", "questions": 8, "bgColor": "var(--bg-icon-blue)", "rate": 4.8, 'maxTime': 80},
+    {"id": "3", "title": "Music", "questions": 12, "bgColor": "var(--bg-icon-red)", "rate": 4.6, 'maxTime': 45},
   ];
 
 

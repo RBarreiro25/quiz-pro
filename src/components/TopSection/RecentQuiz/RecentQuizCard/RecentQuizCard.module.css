@@ -5,7 +5,7 @@
     background-color: var(--white-lighter);
     border-radius: 10px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
 }
