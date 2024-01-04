@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Dispatch, SetStateAction } from "react";
 import styles from './QuizDetails.module.css'
 import PopularQuizCard from '../../BottomSection/PopularQuizCard/popularQuizCard'
 import returnButton from '../assets/arrow-back-icon.svg'
@@ -7,17 +8,27 @@ import questionIcon from './assets/question-icon.svg'
 import clockIcon from './assets/clock-icon.svg'
 import Quiz from '../Quiz/quiz';
 
-export default function QuizDetails( {title, questions, bgColor, rate, setShowDetailsModal, modalTitle, maxTime} ) {
+interface QuizDetailsProps {
+  title: string,
+  questions: number,
+  bgColor: string,
+  rate: number,
+  setShowDetailsModal: Dispatch<SetStateAction<boolean>>,
+  modalTitle: string,
+  maxTime: number
+}
+
+export default function QuizDetails( {title, questions, bgColor, rate, setShowDetailsModal, modalTitle, maxTime}:QuizDetailsProps ) {
   const [isClosing, setIsClosing] = useState(false);
   const [showQuizModal, setShowQuizModal] = useState(false);
 
-  function toHoursAndMinutes(totalMinutes) {
+  function toHoursAndMinutes(totalMinutes: number) {
     const minutes = totalMinutes % 60;
     const hours = Math.floor(totalMinutes / 60);
     return `${padTo2Digits(hours)} hour ${padTo2Digits(minutes)} min`;
   }
   
-  function padTo2Digits(num) {
+  function padTo2Digits(num: number) {
     return num.toString().padStart(2, '0');
   }
 
@@ -28,7 +39,7 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
       }, 200);
   }
 
-  const handleStartClick = (e) => {
+  const handleStartClick = () => {
     window.scrollTo(0, 0);
     setShowQuizModal(true)
   }
@@ -41,13 +52,21 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
               <button className={styles.return_button} onClick={handleCloseModal}>
                 <img src={returnButton} alt='Return button that closes the Quiz Details modal' />
               </button>
-              <h3 className={styles}>{modalTitle}</h3>
+              <h3>{modalTitle}</h3>
               <button className={styles.more_button}>
                 <img src={moreVertButton} alt='3 dots button that shows hidden options' />
               </button>
           </div>
           <section className={styles.about_quiz}>
-              <PopularQuizCard title={title} questions={questions} bgColor={bgColor} rate={rate} blockClick={true} />
+              <PopularQuizCard
+                title={title}
+                questions={questions}
+                bgColor={bgColor}
+                rate={rate}
+                blockClick={true}
+                setSelectedCard={() => {}}
+                setShowDetailsModal={() => {}}
+              />
               <h3 className={styles.modal_title}>Brief explanation about this quiz</h3>
               <div className={styles.quiz_info}>
                 <div className={styles.icon_container}>
@@ -88,7 +107,7 @@ export default function QuizDetails( {title, questions, bgColor, rate, setShowDe
           <div className={styles.buttons}>
             <button
               className={`${styles.modal_button} ${styles.button_blue} ${styles.button_large}`}
-              onClick={(e) => handleStartClick(e)}
+              onClick={() => handleStartClick()}
             >
               Get Started
             </button>

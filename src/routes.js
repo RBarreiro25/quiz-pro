@@ -1,4 +1,4 @@
-import Home from "pages/Home/home.js";
+import Home from "pages/Home/home.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function AppRoutes() {

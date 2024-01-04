@@ -5,7 +5,7 @@ import QuizDetails from '../modals/QuizDetails/quizDetails'
 
 export default function BottomSection() {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
-  const [selectedCard, setSelectedCard] = useState({});
+  const [selectedCard, setSelectedCard] = useState(Object);
   const popularQuizCards = [
     {"id": "1", "title": "Technology", "questions": 10, "bgColor": "var(--bg-icon-yellow)", "rate": 4.9, 'maxTime': 60},
     {"id": "2", "title": "Sport", "questions": 8, "bgColor": "var(--bg-icon-blue)", "rate": 4.8, 'maxTime': 80},
@@ -21,16 +21,14 @@ export default function BottomSection() {
           {popularQuizCards.map(card => (
             <PopularQuizCard
               key={card.id}
-              id={card.id}
               title={card.title}
               questions={card.questions}
               bgColor={card.bgColor}
               rate={card.rate}
               maxTime={card.maxTime}
-              showDetailsModal={showDetailsModal}
               setShowDetailsModal={setShowDetailsModal}
               setSelectedCard={setSelectedCard}
-              selectedCard={selectedCard}
+              blockClick={false}
             />
           ))}
         </div>

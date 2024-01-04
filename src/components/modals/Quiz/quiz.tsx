@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
+import { Dispatch, SetStateAction } from "react";
 import styles from './Quiz.module.css'
 import returnButton from '../assets/arrow-back-icon.svg'
 import smallClock from './assets/small-clock-icon.svg'
-import CountdownTimer from 'components/CountdownTimer/countDownTimer';
-import Stepper from 'components/QuizStepper/quizStepper';
+import CountdownTimer from './CountdownTimer/countDownTimer';
+import Stepper from './QuizStepper/quizStepper';
 
-export default function Quiz( {title, maxTime, setShowQuizModal, questions} ) {
+interface QuizProps {
+  title: string,
+  maxTime: number,
+  setShowQuizModal: Dispatch<SetStateAction<boolean>>,
+  questions: number
+}
+
+export default function Quiz( {title, maxTime, setShowQuizModal, questions}:QuizProps ) {
     const [isClosing, setIsClosing] = useState(false);
     function handleCloseModal() {
         setIsClosing(true);

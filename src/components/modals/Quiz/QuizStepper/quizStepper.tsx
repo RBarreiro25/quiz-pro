@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { MouseEventHandler, useState } from 'react'
 import styles from './QuizStepper.module.css'
 import outlinedCircle from './assets/circle-outlined-icon.svg'
 import errorCircle from './assets/circle-error-icon.svg'
 
-export default function Stepper({ totalSteps, title, handleCloseModal }) {
+interface StepperProps {
+  totalSteps: number,
+  title: string,
+  handleCloseModal: MouseEventHandler<HTMLButtonElement>
+}
+
+export default function Stepper({ totalSteps, title, handleCloseModal }:StepperProps) {
   const [currentStep, setCurrentStep] = useState(1);
-  const [selectedOption, setSelectedOption] = useState(null);
+
+  const [selectedOption, setSelectedOption] = useState<number | string | null>(null);
 
   const questions = {
     Technology: [
@@ -328,9 +335,9 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
       ],
   };
 
-  const handleOptionClick = (e, index) => {
-    const currentQuestion = questions[title][currentStep - 1];
-    const selected = currentQuestion.options[index];
+  const handleOptionClick = (index: number) => {
+    const currentQuestion = questions[title as keyof typeof questions][currentStep - 1];
+    const selected = currentQuestion.options![index];
 
     if (selected.correct) {
       setSelectedOption('correct');
@@ -343,8 +350,8 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
     setCurrentStep((prevStep) => Math.min(prevStep + 1, totalSteps + 1));
     setSelectedOption(null);
     if (currentStep === totalSteps) {
-        const timerNow = document.getElementById('countdown_timer').innerHTML;
-        document.getElementById('countdown_timer').innerHTML = timerNow;
+        const timerNow = document.getElementById('countdown_timer')!.innerHTML;
+        document.getElementById('countdown_timer')!.innerHTML = timerNow;
     }
   };
 
@@ -366,12 +373,12 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
             Completed {Math.floor(calculateProgress())}%
         </div>
         <div className={styles.question_text}>
-            {questions[title][currentStep - 1].question || ''}
+            {questions[title as keyof typeof questions][currentStep - 1].question || ''}
         </div>
-        <div className={styles.question_image} style={{backgroundImage: "url(" + (questions[title][currentStep - 1].image || '') + ")"}}>
+        <div className={styles.question_image} style={{backgroundImage: "url(" + (questions[title as keyof typeof questions][currentStep - 1].image || '') + ")"}}>
         </div>
         <div className={styles.question_options} id='question_options'>
-            {questions[title][currentStep - 1].options?.map((option, index) => (
+            {questions[title as keyof typeof questions][currentStep - 1].options?.map((option, index) => (
                 <div
                     className={`${styles.question_option} ${
                         selectedOption !== null ?
@@ -380,7 +387,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
                         : ''
                     }`}
                     key={index}
-                    onClick={(e) => handleOptionClick(e, index)}
+                    onClick={() => handleOptionClick(index)}
                 >
                     <img
                         src={

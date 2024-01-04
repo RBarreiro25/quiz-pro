@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.bottom_section h2 {
+.bottom_section .h2 {
     font-size: 14px;
     font-weight: 600;
     color: var(--gray);

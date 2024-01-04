@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CountDownTimer.module.css'
 
-export default function CountdownTimer({ minutes }) {
+interface CountdownTimeProps {
+  minutes: number
+}
+
+export default function CountdownTimer({ minutes }:CountdownTimeProps) {
   const [time, setTime] = useState({
     minutes: minutes,
     seconds: 0,
