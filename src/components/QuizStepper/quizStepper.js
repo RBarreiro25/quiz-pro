@@ -11,7 +11,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
     Technology: [
         {
           "question": "What does the provided image depict?",
-          "image": "An image showcasing a server room with multiple racks of servers.",
+          "image": "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Data center", "correct": true },
             { "text": "Virtual reality room", "correct": false },
@@ -21,7 +21,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What is the subject of the image?",
-          "image": "An illustration of a circuit board with various electronic components.",
+          "image": "https://images.unsplash.com/photo-1515630278258-407f66498911?q=80&w=2098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Computer mouse internals", "correct": false },
             { "text": "Motherboard circuitry", "correct": true },
@@ -31,7 +31,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What technology is being showcased in the image?",
-          "image": "A photo of a person using augmented reality glasses with digital information overlaid on the real world.",
+          "image": "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=2037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Virtual Reality (VR)", "correct": false },
             { "text": "Artificial Intelligence (AI)", "correct": false },
@@ -41,7 +41,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What activity is likely happening in the image?",
-          "image": "A screenshot of a programming environment with lines of code and a console.",
+          "image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Video editing", "correct": false },
             { "text": "Web development", "correct": true },
@@ -51,7 +51,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What is the main technology featured in the image?",
-          "image": "A picture of a drone flying in the sky.",
+          "image": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Artificial Intelligence", "correct": false },
             { "text": "Robotics", "correct": true },
@@ -61,7 +61,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What concept does the image represent?",
-          "image": "An illustration of a cloud computing infrastructure with interconnected servers.",
+          "image": "https://plus.unsplash.com/premium_photo-1688678097425-00bba1629e32?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Edge computing", "correct": false },
             { "text": "Blockchain network", "correct": false },
@@ -71,7 +71,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What does the image portray?",
-          "image": "A photo of a futuristic smart home with various connected devices.",
+          "image": "https://plus.unsplash.com/premium_photo-1688686804638-fadb460edc4a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Traditional home design", "correct": false },
             { "text": "Sustainable living space", "correct": false },
@@ -81,7 +81,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What technology is demonstrated in the image?",
-          "image": "An illustration of a 3D printer creating a physical object.",
+          "image": "https://images.unsplash.com/photo-1582879304171-8041c73bedbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Virtual Reality (VR)", "correct": false },
             { "text": "Augmented Reality (AR)", "correct": false },
@@ -91,7 +91,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What security feature is implied in the image?",
-          "image": "A screenshot of a mobile app with a fingerprint icon for authentication.",
+          "image": "https://images.unsplash.com/photo-1667453466805-75bbf36e8707?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Facial recognition", "correct": false },
             { "text": "Two-factor authentication", "correct": false },
@@ -101,7 +101,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What technology is showcased in the image?",
-          "image": "A photo of a self-driving car on the road.",
+          "image": "https://images.unsplash.com/photo-1625924305476-d8f96c560c21?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Artificial Intelligence (AI)", "correct": true },
             { "text": "Quantum Computing", "correct": false },
@@ -111,13 +111,13 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Finished!",
-          "image": "Congrulations image",
+          "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         }
       ],
     Sport: [
         {
           "question": "What does the provided image depict?",
-          "image": "An iconic image of a basketball player in action.",
+          "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Basketball game", "correct": true },
             { "text": "Volleyball match", "correct": false },
@@ -127,19 +127,19 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What is the subject of the image?",
-          "image": "A photo of a FIFA World Cup trophy.",
+          "image": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
-            { "text": "Football trophy", "correct": true },
+            { "text": "Soccer trophy", "correct": true },
             { "text": "Olympic medal", "correct": false },
             { "text": "Baseball award", "correct": false },
             { "text": "Tennis championship cup", "correct": false }
           ]
         },
         {
-          "question": "What technology is being showcased in the image?",
-          "image": "An image of a tennis court during a major tournament.",
+          "question": "What sport is being showcased in the image?",
+          "image": "https://images.unsplash.com/flagged/photo-1576972405668-2d020a01cbfa?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
-            { "text": "Augmented Reality tennis court", "correct": false },
+            { "text": "Augmented Reality basketball court", "correct": false },
             { "text": "Virtual Reality gaming arena", "correct": false },
             { "text": "Wimbledon tennis court", "correct": true },
             { "text": "Indoor soccer field", "correct": false }
@@ -147,7 +147,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who holds the record for the most Olympic gold medals in athletics?",
-          "image": "A photo of a track and field event at the Olympics.",
+          "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Usain Bolt", "correct": true },
             { "text": "Michael Phelps", "correct": false },
@@ -157,7 +157,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "In which sport would you perform a slam dunk?",
-          "image": "An illustration of a basketball player dunking the ball.",
+          "image": "https://images.unsplash.com/photo-1573196444192-cc9f26e94408?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Soccer", "correct": false },
             { "text": "Basketball", "correct": true },
@@ -167,7 +167,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who is known as 'The Rocket' in snooker?",
-          "image": "An image of a snooker table with players in the background.",
+          "image": "https://images.unsplash.com/photo-1582626265275-67a72c563a3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Ronnie O'Sullivan", "correct": true },
             { "text": "Mark Selby", "correct": false },
@@ -177,7 +177,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Which baseball player holds the record for the most home runs in a single season?",
-          "image": "A photo of a baseball player hitting a home run.",
+          "image": "https://images.unsplash.com/photo-1659132252130-5dc2962bc425?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Babe Ruth", "correct": false },
             { "text": "Barry Bonds", "correct": true },
@@ -187,7 +187,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What is the scoring system called in a game of tennis?",
-          "image": "An image of a tennis match in progress.",
+          "image": "https://images.unsplash.com/photo-1531315396756-905d68d21b56?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Points", "correct": false },
             { "text": "Rounds", "correct": false },
@@ -197,13 +197,13 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Finished!",
-          "image": "Congrulations image",
+          "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         }
       ],
     Music: [
         {
           "question": "What does the provided image depict?",
-          "image": "An illustration of a concert stage with musicians performing.",
+          "image": "https://images.unsplash.com/photo-1501612780327-45045538702b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Recording studio session", "correct": false },
             { "text": "Live concert performance", "correct": true },
@@ -213,7 +213,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who is the legendary guitarist shown in the image?",
-          "image": "A photo of a guitarist playing a solo on stage.",
+          "image": "https://media.gettyimages.com/id/1210215335/pt/foto/london-england-eric-clapton-performs-on-stage-during-music-for-the-marsden-2020-at-the-o2.jpg?s=2048x2048&w=gi&k=20&c=lhRbKra6tQz5sMHRrMTVu8DyCfhh8ZLMGJ4WE-UYwTo=",
           "options": [
             { "text": "Eric Clapton", "correct": true },
             { "text": "Jimi Hendrix", "correct": false },
@@ -223,7 +223,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What type of instrument is predominantly featured in the image?",
-          "image": "An image of a jazz band with a saxophonist taking the lead.",
+          "image": "https://images.unsplash.com/photo-1594333160155-a0f1827c724c?q=80&w=2077&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Electric guitar", "correct": false },
             { "text": "Drum set", "correct": false },
@@ -233,7 +233,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Which music genre is associated with the image?",
-          "image": "A snapshot from a lively salsa dance club.",
+          "image": "https://images.unsplash.com/photo-1545959570-a94084071b5d?q=80&w=1997&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Classical music", "correct": false },
             { "text": "Salsa", "correct": true },
@@ -243,7 +243,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who is the lead singer of the band shown in the image?",
-          "image": "A picture of a rock band performing on stage with a charismatic lead vocalist.",
+          "image": "https://media.gq.com/photos/570fc010bf3a8ba177b0b60d/16:9/w_2580,c_limit/axl-rose-05.jpg",
           "options": [
             { "text": "Freddie Mercury", "correct": false },
             { "text": "Mick Jagger", "correct": false },
@@ -253,7 +253,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What is the primary instrument being played in the image?",
-          "image": "An illustration of a person playing the violin in a classical orchestra.",
+          "image": "https://plus.unsplash.com/premium_photo-1681841305228-2f9b0d5b5d9e?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Flute", "correct": false },
             { "text": "Violin", "correct": true },
@@ -263,7 +263,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Which musical era is represented in the image?",
-          "image": "A black and white photo of jazz musicians in the 1920s.",
+          "image": "https://www.blackpast.org/wp-content/uploads/prodimages/files/blackpast_images/Edythe_Turnham_and_Knights_of_Syncopation_Seattle_1925.jpg",
           "options": [
             { "text": "Baroque era", "correct": false },
             { "text": "Renaissance era", "correct": false },
@@ -273,7 +273,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What musical instrument is the focus of the image?",
-          "image": "A close-up photo of a drummer during a live rock concert.",
+          "image": "https://images.unsplash.com/flagged/photo-1578681954439-c82244fce655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Electric guitar", "correct": false },
             { "text": "Drum set", "correct": true },
@@ -283,7 +283,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who is the famous pianist shown in the image?",
-          "image": "A picture of a renowned pianist performing on a grand piano.",
+          "image": "https://blog.blombo.com/wp-content/uploads/2020/05/Pianista-Lang-Lang.jpg",
           "options": [
             { "text": "Lang Lang", "correct": true },
             { "text": "Arthur Rubinstein", "correct": false },
@@ -293,7 +293,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What music genre is associated with the image?",
-          "image": "An illustration of a DJ at a turntable with a vibrant nightclub in the background.",
+          "image": "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Country music", "correct": false },
             { "text": "Electronic dance music (EDM)", "correct": true },
@@ -303,7 +303,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Who is the iconic pop star shown in the image?",
-          "image": "A photo of a solo artist singing into a microphone with a dazzling stage setup.",
+          "image": "https://mjbeats.com.br/wp-content/uploads/2023/06/Michael-Jackson-Off-the-wall-scaled.jpg",
           "options": [
             { "text": "Madonna", "correct": false },
             { "text": "Michael Jackson", "correct": true },
@@ -313,7 +313,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "What music instrument is the central focus of the image?",
-          "image": "An image of a flamenco guitarist performing with intense focus.",
+          "image": "https://images.unsplash.com/photo-1591573784754-e9498ebb4913?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "options": [
             { "text": "Accordion", "correct": false },
             { "text": "Flamenco guitar", "correct": true },
@@ -323,7 +323,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         },
         {
           "question": "Finished!",
-          "image": "Congrulations image",
+          "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         }
       ],
   };
@@ -368,8 +368,7 @@ export default function Stepper({ totalSteps, title, handleCloseModal }) {
         <div className={styles.question_text}>
             {questions[title][currentStep - 1].question || ''}
         </div>
-        <div className={styles.question_image}>
-            {questions[title][currentStep - 1].image || ''}
+        <div className={styles.question_image} style={{backgroundImage: "url(" + (questions[title][currentStep - 1].image || '') + ")"}}>
         </div>
         <div className={styles.question_options} id='question_options'>
             {questions[title][currentStep - 1].options?.map((option, index) => (
