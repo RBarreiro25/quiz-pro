@@ -1,70 +1,104 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aplicativo de perguntas e respostas: QuizPro
 
-## Available Scripts
+Teste prático feito por Raphael Barreiro e entregue à empresa Casa Promodigital, como parte do processo seletivo para o cargo de Desenvolvedor Front-End.
 
-In the project directory, you can run:
+Entrega realizada dia: 04/01/2024.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Informações iniciais
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Olá! Bem vindo(a) ao Quiz.
 
-### `npm test`
+Aqui você encontrará algumas informações importantes acerca do ambiente de desenvolvimento do projeto, requisitos para rodar a aplicação, passo-a-passo para executá-la,
+dificuldades enfrentadas no decorrer da criação e mais.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para acessar o design/layout base a ser seguido desse projeto no figma, ver link: https://www.figma.com/file/3Lu4rDnIzyQMXNlQ39CJcB/Quiz-Modern-Mobile-App?node-id=0%3A1&t=8HTFNj3H3INB8CGj-1
 
-### `npm run build`
+O cronograma de atividades para a entrega desse teste pode ser encontrado no final deste documento.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Premissas assumidas e decisões de projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Projeto executado em 4 fases: 
+- Fase 1: Entendimento dos requisitos, planejamento e esboço inicial;
+- Fase 2: Desenvolvimento;
+- Fase 3: Revisão de código;
+- Fase 4: Reunião da documentação e entrega do teste.
 
-### `npm run eject`
+2. Linguagens e tecnologias usadas:
+- React v18.2.0, Typescript (com os @types: jest, node, react e react-dom) e CSS3 Modules (typescript-plugin-css-modules V5.0.2).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Outros:
+- Aplicação com design focado em dispositivos mobile. Contudo, é 100% responsiva, adaptando-se a todos os formatos de tela (mobile, tablet e desktop);
+- Interatividade e dinamicidade de forma sutil e confortável, tornando a experiência do usuário agradável;
+- Não utilização de bibliotecas de componentes. Desafiei-me a criar tudo do 0;
+- Entrega via GitHub, em repositório público.
+- Prazo máximo para a conclusão e envio do projeto: 3 dias.
+- Resultado do teste, Link do GitHub e documentação enviados para chat privado do LinkedIn do recrutador responsável (Felipe, sócio da empresa).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Requisitos para executar o ambiente
+- Possuir instalado o Node (v10+);
+- Um gerenciador de pacotes (o npm vem incluído na instalação do Node. Basta ser v5.2+);
+- Um editor de códigos para trabalhar os arquivos (recomendação: Visual Studio Code).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Instruções para executar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  https://github.com/RBarreiro25/quiz-pro.git
+```
 
-### Code Splitting
+2. Entre no diretório do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd quiz-pro
+```
 
-### Analyzing the Bundle Size
+3. Instale as dependências
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm install           (ou similar, via Yarn)
+```
 
-### Making a Progressive Web App
+4. Inicie o servidor da aplicação;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  npm run start         (ou similar, via Yarn)
+```
 
-### Advanced Configuration
+5. Aguardar o fim do processamento da etapa anterior. A aplicação irá abrir automaticamente no navegador padrão do seu sistema.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Cronograma de atividades:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Fase 1: Planejamento e esboço inicial
+   - Estudo do layout base Figma;
+   - Definição das premissas e regras do teste/aplicação;
+   - Criação do cronograma de atividades;
+   - Decisão de tecnologias e bibliotecas a serem utilizadas; 
+   - Definição da estrutura de pastas da aplicação;
+   - Definição e transferência dos arquivos estáticos a serem utilizados.
 
-### `npm run build` fails to minify
+### Fase 2: Desenvolvimento
+   - Instalação das bibliotecas a serem utilizadas;
+   - Criação da estrutura de pastas e sub-pastas;
+   - Transferência dos arquivos estáticos para as devidas pastas;
+   - Desenvolvimento das rotas web;
+   - Desenvolvimento da base da aplicação em Javascript + React, com a migração para o Typescript em seguida;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Fase 3: Revisão de código
+   - Revisão dos arquivos, nome de variáveis e possíveis erros de digitação.
+
+### Fase 4: Reunião da documentação e entrega do teste 
+   - Criação do Readme estruturado, contendo todas as informações;
+   - Envio do teste.
+
+
+## Autores
+
+- [@raphaelbarreiro](https://github.com/RBarreiro25)
+
