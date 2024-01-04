@@ -8,7 +8,7 @@ Entrega realizada dia: 04/01/2024.
 
 ## Informações iniciais
 
-Olá! Bem vindo(a) ao Quiz.
+Olá! Bem vindo(a) ao QuizPro.
 
 Aqui você encontrará algumas informações importantes acerca do ambiente de desenvolvimento do projeto, requisitos para rodar a aplicação, passo-a-passo para executá-la,
 dificuldades enfrentadas no decorrer da criação e mais.
